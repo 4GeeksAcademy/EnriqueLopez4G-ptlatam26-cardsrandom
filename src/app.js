@@ -2,7 +2,6 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 const newCard = () => {
@@ -39,12 +38,9 @@ const cardRandomGenerator = () => {
     element2.classList.add("bi", "text-danger", newClass);
   } else element2.classList.add("bi", newClass);
 };
+
 window.onload = function() {
   //write your code here¿
+
   setInterval(cardRandomGenerator, 2000); // 3000 milisegundos = 3 segundos
 };
-
-//<i class="bi bi-suit-heart-fill"></i>
-//<i class="bi bi-suit-spade-fill"></i>
-//<i class="bi bi-suit-club-fill"></i>
-//<i class="bi bi-suit-diamond-fill"></i>
